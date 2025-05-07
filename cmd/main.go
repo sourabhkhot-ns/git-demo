@@ -12,11 +12,13 @@ func main() {
 	// Perform calculations
 	sum := calc.Add(10, 5)
 	diff := calc.Subtract(10, 5)
+	mul := calc.Multiply(5, 10)
 
 	// Print results
 	fmt.Printf("Calculator: %s\n", calc.Name)
 	fmt.Printf("10 + 5 = %d\n", sum)
 	fmt.Printf("10 - 5 = %d\n", diff)
+	fmt.Printf("10 * 5 = %d\n", mul)
 
 	// Demonstrate interface usage
 	var calcInterface math.Calculator = calc

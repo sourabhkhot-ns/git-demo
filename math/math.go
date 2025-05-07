@@ -4,6 +4,7 @@ package math
 type Calculator interface {
 	Add(a, b int) int
 	Subtract(a, b int) int
+	Multiply(a, b int) int
 }
 
 // BasicCalculator implements the Calculator interface
@@ -26,4 +27,9 @@ func (c *BasicCalculator) Add(a, b int) int {
 // Subtract implements subtraction operation
 func (c *BasicCalculator) Subtract(a, b int) int {
 	return a - b
+}
+
+// Multiply implements multiplication operation
+func (c *BasicCalculator) Multiply(a, b int) int {
+	return a * b
 }
